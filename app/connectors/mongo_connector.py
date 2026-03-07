@@ -240,7 +240,7 @@ class MongoConnector:
         self._collections: Dict[str, CollectionWrapper] = {}
 
     def connect(self):
-        uri  = os.getenv("MONGODB_URI", "mongodb+srv://sachinsisodia60:Sachin%40321!@qr-safe.kgpydrj.mongodb.net/?retryWrites=true&w=majority")
+        uri  = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
         name = os.getenv("MONGO_DB",    "qrsafe_db")
         try:
             self._client = MongoClient(uri, serverSelectionTimeoutMS=5000)
