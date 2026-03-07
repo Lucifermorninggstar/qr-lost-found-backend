@@ -35,4 +35,3 @@ websockets==16.0
 minio
 cloudinary
 pymongo[srv]==4.6.3
-dnspython==2.6.1
